@@ -1,4 +1,5 @@
--- Pobieranie komentarzy do tabel
+/* 
+Pobieranie komentarzy do tabel
 SELECT *
 FROM user_tab_comments
 WHERE table_name = 'table_name';
@@ -7,4 +8,10 @@ WHERE table_name = 'table_name';
 SELECT * 
 FROM user_col_comments
 WHERE table_name = 'table_name';
-/
+*/
+
+SET VERIFY OFF
+SET DEFINE '#'
+SELECT * 
+FROM user_tab_comments
+WHERE table_name = '#table_name';
