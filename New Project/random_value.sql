@@ -1,0 +1,27 @@
+SET SERVEROUTPUT ON;
+
+DECLARE
+
+v_rand INTEGER;
+
+bl BOOLEAN;
+
+BEGIN
+
+v_rand := DBMS_RANDOM.VALUE(100,100000);
+
+IF v_rand > 1000 THEN
+
+bl := TRUE;
+
+if bl = TRUE THEN
+
+DBMS_OUTPUT.PUT_LINE(v_rand);
+
+END IF;
+
+ 
+
+END IF;
+
+END;
