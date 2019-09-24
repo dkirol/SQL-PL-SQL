@@ -174,3 +174,5 @@ CONSTRAINT pk_late_payment PRIMARY KEY(id_late_payment),
 CONSTRAINT fk_late_payment_customer FOREIGN KEY(id_customer) REFERENCES customers(id_customer),
 CONSTRAINT fk_late_payment_part_pay FOREIGN KEY(id_part_pay) REFERENCES part_pay(id_part_pay)
 );
+
+commit;
